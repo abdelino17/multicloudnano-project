@@ -55,7 +55,7 @@ resource "azurerm_mssql_database" "udacity" {
   max_size_gb    = 150
   read_scale     = true
   sku_name       = "S0"
-  zone_redundant = true
+  zone_redundant = false
 
   tags = {
     name        = "udacity-mssql-db"

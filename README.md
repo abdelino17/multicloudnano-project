@@ -107,20 +107,23 @@ In Cosmos Db for transactional data storage, you are charged **$0.05** per 10,00
 
 10. Changes were applied in 15 mns
 
-11. Verify the changes took effect:
+For Azure:
 
-    For Azure:
+![Diagram](./screenshots/terraform_azure_apply.png)
 
-    1.  In Azure go the search bar and type `container-instances` and click the icon that comes up
-    2.  Click `udacity-continst`
-    3.  Copy the URL from the field FQDN
-    4.  Paste that URL into another tab in your browser and add `:3000` onto the end of the URL. It will look something like this: `udacity-tscottoazure.westeurope.azurecontainer.io:3000`. Go to that URL. You should see this text in your browser (note the name will be yours):
+For AWS:
 
-                This is my app running on Azure accessing an S3 bucket in AWS: udacity-tscotto-s3-bucket
+![Diagram](./screenshots/terraform_aws_apply.png)
 
-                And also accessing a dynamodb instance in AWS: udacity-tscotto-aws-dynamodb
+11. I checked the changes:
 
-    For AWS:
+For Azure, I had:
+
+![Diagram](./screenshots/terraform_azure_apply.png)
+
+For AWS, I had:
+
+![Diagram](./screenshots/terraform_aws_apply.png)
 
     1.  In AWS go the search bar and type `load balancer` and click Load Balancers under the EC2 heading
     2.  Click `udacity-lb`
