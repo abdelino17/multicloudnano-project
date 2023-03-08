@@ -31,7 +31,7 @@ resource "azurerm_container_group" "udacity" {
 
 ####### Your Additions Will Start Here ######
 resource "azurerm_storage_account" "udacity" {
-  name                     = "udacitysa"
+  name                     = "udacityabdelsa"
   resource_group_name      = data.azurerm_resource_group.udacity.name
   location                 = data.azurerm_resource_group.udacity.location
   account_tier             = "Standard"
@@ -43,7 +43,7 @@ resource "azurerm_mssql_server" "udacity" {
   resource_group_name          = data.azurerm_resource_group.udacity.name
   location                     = data.azurerm_resource_group.udacity.location
   version                      = "12.0"
-  administrator_login          = "administrator"
+  administrator_login          = "4dm1n157r470r"
   administrator_login_password = "Il@veAz@re2023"
 }
 

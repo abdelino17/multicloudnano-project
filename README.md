@@ -94,20 +94,19 @@ In Cosmos Db for transactional data storage, you are charged **$0.05** per 10,00
     For AWS:
 
     ```
-    cd multicloudnano-project/starter/aws
+    cd multicloudnano-project/terraform/aws
     terraform apply
     ```
 
     For Azure:
 
     ```
-    cd cd11573-multicloud-computing-project/starter/azure
+    cd multicloudnano-project/terraform/azure
     terraform apply
     ```
 
-    And type `yes` and enter when asked if you want to apply the changes
+10. Changes were applied in 15 mns
 
-10. Wait for the changes to apply. This can take up to 20 min.
 11. Verify the changes took effect:
 
     For Azure:
