@@ -179,11 +179,11 @@ resource "aws_ecs_task_definition" "udacity_app" {
     "environment": [
       {
         "name": "AZURE_SQL",
-        "value": "udacity-tscotto-azure-sql"
+        "value": "udacity-abdel-azure-sql"
       },
       {
         "name": "AZURE_DOTNET_APP",
-        "value": "udacity-tscotto-azure-dotnet-app"
+        "value": "udacity-abdel-azure-dotnet-app"
       }
     ],
     "portMappings": [
