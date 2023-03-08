@@ -109,21 +109,21 @@ In Cosmos Db for transactional data storage, you are charged **$0.05** per 10,00
 
 For Azure:
 
-![Diagram](./screenshots/terraform_azure_apply.png)
+![Terraform Azure Apply](./screenshots/terraform_azure_apply.png)
 
 For AWS:
 
-![Diagram](./screenshots/terraform_aws_apply.png)
+![Terraform AWS Apply](./screenshots/terraform_aws_apply.png)
 
 11. I checked the changes:
 
 For Azure, I had:
 
-![Diagram](./screenshots/terraform_azure_apply.png)
+![Azure WebApp Running](./screenshots/webapp_aws_running.png)
 
 For AWS, I had:
 
-![Diagram](./screenshots/terraform_aws_apply.png)
+![AWS WebApp Running](./screenshots/webapp_aws_running.png)
 
     1.  In AWS go the search bar and type `load balancer` and click Load Balancers under the EC2 heading
     2.  Click `udacity-lb`
