@@ -31,7 +31,7 @@ resource "azurerm_container_group" "udacity" {
 
 ####### Your Additions Will Start Here ######
 resource "azurerm_storage_account" "udacity" {
-  name                     = "udacity-sa"
+  name                     = "udacitysa"
   resource_group_name      = data.azurerm_resource_group.udacity.name
   location                 = data.azurerm_resource_group.udacity.location
   account_tier             = "Standard"
