@@ -58,7 +58,7 @@ Your goal is to select a cloud provider for each of the 4 required services - SQ
 
 ### Solution
 
-1. **Why should we choose DynamoDB?**
+1. **Why did we choose DynamoDB?**
 
 When it comes to the NoSQL Database, Amazon DynamoDB and Azure CosmosDB both are widely used NoSQL databases with high scalability and availability. Amazon has been using DynamoDB on its own marketplace for more than ten years.
 
