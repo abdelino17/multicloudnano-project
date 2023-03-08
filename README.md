@@ -119,42 +119,37 @@ For AWS:
 
 For Azure, I had:
 
-![Azure WebApp Running](./screenshots/webapp_aws_running.png)
+![Azure WebApp Running](./screenshots/webapp_azure_running.png)
 
 For AWS, I had:
 
 ![AWS WebApp Running](./screenshots/webapp_aws_running.png)
 
-    1.  In AWS go the search bar and type `load balancer` and click Load Balancers under the EC2 heading
-    2.  Click `udacity-lb`
-    3.  Copy the URL from the field DNS
-    4.  Paste that URL into another tab in your browser. It will look something like this: `udacity-lb-266017657.us-east-2.elb.amazonaws.com`. Go to that URL. You should see this text in your browser (note the name will be yours):
+12. The screenshots are in [this folder](./screenshots)
 
-                This is my app running on AWS accessing an Azure SQL instance: tscotto-udacity-sql
+13. That's all!
 
-                And also a dotnet app in Azure: udacity-tscotto-azure-dotnet-app
+14. I destroyed all the environments with the following.
 
-12. Please take a screenshot of a running web applications in a browser
-13. Complete!
-14. Clean up resources
+For AWS:
 
-    For AWS:
+```
+cd multicloudnano-project/terraform/aws
+terraform destroy
+```
 
-    ```
-    cd cd11573-multicloud-computing-project/starter/aws
-    terraform destroy
-    ```
+![Terraform AWS Destroy](./screenshots/terraform_aws_destroy.png)
 
-    For Azure:
+For Azure:
 
-    ```
-    cd cd11573-multicloud-computing-project/starter/azure
-    terraform destroy
-    ```
+```
+cd multicloudnano-project/terraform/azure
+terraform destroy
+```
 
-    And type `yes` and press enter when asked if you want to destroy the resources
+![Terraform Azure Destroy](./screenshots/terraform_azure_destroy.png)
 
-15. Please take a screenshot of the cloud console showing the successful Terraform destroy command
+15. These screenshots are in [the same folder](./screenshots)
 
 ### Note about DynamoDB vs Cosmos DB
 
