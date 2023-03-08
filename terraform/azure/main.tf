@@ -1,5 +1,5 @@
 data "azurerm_resource_group" "udacity" {
-  name = "Regroup_4gKqrgD_cn"
+  name = "Regroup_5rb_XIAx1WZACRgV30r"
 }
 
 resource "azurerm_container_group" "udacity" {
