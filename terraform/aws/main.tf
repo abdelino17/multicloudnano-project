@@ -1,6 +1,6 @@
 locals {
   name   = "udacity"
-  region = "us-east-2"
+  region = "us-east-1"
   tags = {
     Name      = local.name
     Terraform = "true"
@@ -203,4 +203,26 @@ variable "app_count" {
 }
 
 ####### Your Additions Will Start Here ######
+resource "aws_s3_bucket" "udacity_bucket" {
+  bucket = "udacity-abdel-aws-s3-bucket"
 
+  tags = {
+    Name        = "udacity-bucket"
+    Environment = "production"
+  }
+}
+
+resource "aws_s3_bucket_acl" "udacity_bucket_acl" {
+  bucket = aws_s3_bucket.udacity_bucket.id
+  acl    = "private"
+}
+
+resource "aws_dynamodb_table" "basic-dynamodb-table" {
+  name         = "udacity-abdel-aws-dynamodb"
+  billing_mode = "PAY_PER_REQUEST"
+
+  tags = {
+    Name        = "udacity-dynamodb"
+    Environment = "production"
+  }
+}
