@@ -72,28 +72,29 @@ In Cosmos Db for transactional data storage, you are charged **$0.05** per 10,00
 
 ![Diagram](diagram.jpg)
 
-3.  Using the [above linked](#resources) references, add the appropriate modules to the given cloud provider Terraform scafolding files:
-    1. AWS - `starter/aws/main.tf`
-    2. Azure - `starter/azure/main.tf`
-4.  Edit the appropriate environment variables for the containers to test your install
-    1. Find the following environment variables in the Terraform scaffolding and change their values to reflect your name:
-       1. AWS_S3_BUCKET: `udacity-<your_name>-aws-s3-bucket`
-       2. AWS_DYNAMO_INSTANCE: `udacity-<your_name>-aws-dynamodb`
-       3. AZURE_SQL: `udacity-<your_name>-azure-sql`
-       4. AZURE_DOTNET_APP: `udacity-<your_name>-azure-dotnet-app`
-5.  Edit the Azure DNS for the container. Find this line in `starter/azure/main.tf` and replace `<your_name>` with your name:
+3.  I added the appropriate modules to the given cloud provider Terraform scafolding files:
+
+    1. AWS - `terraform/aws/main.tf`
+    2. Azure - `terraform/azure/main.tf`
+
+4.  I edited the appropriate environment variables for the containers to test my install
+
+5.  I edit the Azure DNS for the container.
     ```
       dns_name_label      = "udacity-tscotto-azure"
     ```
-6.  Services you select will be added after commented line `####### Your Additions Will Start Here ######` in the respective cloud provider `main.tf` file.
-7.  After you have added the modules, applies the changes to the files and push your changes to your github repositories
-8.  Pull a fresh copy of your github repository into your AWS and Azure Cloud Shells
-9.  In each shell, run the following:
+6.  I completed the files with my modules.
+
+7.  I applied my changes and pushed my code.
+
+8.  Go to the Cloud Shell to pull a fresh copy of your github repository
+
+9.  In each shell, I run the following:
 
     For AWS:
 
     ```
-    cd cd11573-multicloud-computing-project/starter/aws
+    cd multicloudnano-project/starter/aws
     terraform apply
     ```
 

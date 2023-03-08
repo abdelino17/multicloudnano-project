@@ -220,6 +220,12 @@ resource "aws_s3_bucket_acl" "udacity_bucket_acl" {
 resource "aws_dynamodb_table" "basic-dynamodb-table" {
   name         = "udacity-abdel-aws-dynamodb"
   billing_mode = "PAY_PER_REQUEST"
+  hash_key     = "UserId"
+
+  attribute {
+    name = "UserId"
+    type = "S"
+  }
 
   tags = {
     Name        = "udacity-dynamodb"
