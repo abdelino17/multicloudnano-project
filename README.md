@@ -81,7 +81,7 @@ In Cosmos Db for transactional data storage, you are charged **$0.05** per 10,00
 
 5.  I edit the Azure DNS for the container.
     ```
-      dns_name_label      = "udacity-tscotto-azure"
+      dns_name_label      = "udacity-abdel-azure"
     ```
 6.  I completed the files with my modules.
 
